@@ -1,0 +1,8 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "会议纪要",
+  "attachmentFolderPath": "attachments",
+  "useMarkdownLinks": false,
+  "defaultViewMode": "preview"
+}
