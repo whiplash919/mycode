@@ -20,7 +20,7 @@ FROM "00 - INBOX"
 SORT file.cday ASC
 ```
 
-## 🆘 在 INBOX 超过 3 天的（需立即处理）
+## 在 INBOX 超过 3 天的（需立即处理）
 
 ```dataview
 LIST "**" + file.link + "** — 已停留 " + (date(today) - file.cday).days + " 天"
