@@ -1,7 +1,7 @@
 ---
 type: meeting
 status: complete
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: {{date:YYYY-MM-DD}}
 tags: [meeting]
 attendees: []
 decisions: []
@@ -9,10 +9,10 @@ actions: []
 project: 
 ---
 
-# <% tp.date.now("YYYY-MM-DD") %> Meeting — <% tp.file.title.replace(/^\d{4}-\d{2}-\d{2}-meeting-/, "") %>
+# {{date:YYYY-MM-DD}} Meeting — {{title}}
 
 ## 基本信息
-- **日期 / Date**: <% tp.date.now("YYYY-MM-DD HH:mm") %>
+- **日期 / Date**: {{date:YYYY-MM-DD}} {{time:HH:mm}}
 - **类型 / Type**: <!-- standup / 1:1 / kickoff / review / interview -->
 - **参与人 / Attendees**: 
 - **关联项目 / Project**: [[]]

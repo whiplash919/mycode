@@ -46,9 +46,10 @@ obsidian/
 ## 快速开始
 
 ### 1. 在 Obsidian 中启用必要插件
-- **Templater**（增强模板）
-- **Dataview**（仪表盘查询）
-- **Periodic Notes** 或 **Daily Notes 核心插件**（每日笔记）
+- **核心 Templates 插件**（内置，无需安装）—— 模板里的 `{{date}}` `{{title}}` 等占位符靠它自动填充
+- **Dataview**（社区插件，仪表盘查询必装）
+- **Daily Notes 核心插件**（内置）—— 用于每日笔记
+- *可选*：**Templater**（如果想要更强的脚本占位符，比如自动算"昨天/明天"日期）
 
 ### 2. 创建 vault 顶层结构
 按 `vault-structure.md` 创建 7 个顶层文件夹（编号开头，自动排序）。

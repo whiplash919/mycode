@@ -1,14 +1,14 @@
 ---
 type: resource
 status: reference
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: {{date:YYYY-MM-DD}}
 topic: 
 source: 
 reliability: medium
 tags: [resource]
 ---
 
-# 📚 <% tp.file.title.replace(/^\d{4}-\d{2}-\d{2}-resource-/, "") %>
+# 📚 {{title}}
 
 ## 🎯 这是什么 / What This Is
 <!-- 一句话告诉未来的自己：这是一份关于什么的参考资料。 -->

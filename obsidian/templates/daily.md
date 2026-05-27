@@ -1,11 +1,11 @@
 ---
 type: daily
 status: active
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: {{date:YYYY-MM-DD}}
 tags: [daily]
 ---
 
-# <% tp.date.now("YYYY-MM-DD dddd") %>
+# {{date:YYYY-MM-DD dddd}}
 
 ## 🎯 今日三个最重要的事
 1. 
@@ -42,5 +42,6 @@ tags: [daily]
 ---
 
 ## 链接
-- 昨天：[[<% tp.date.now("YYYY-MM-DD", -1) %>]]
-- 明天：[[<% tp.date.now("YYYY-MM-DD", 1) %>]]
+<!-- 用 Daily Notes 插件的"上一篇/下一篇"导航按钮跳转，或手动填日期 -->
+- 昨天：[[]]
+- 明天：[[]]

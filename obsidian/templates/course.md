@@ -1,19 +1,19 @@
 ---
 type: course
 status: active
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: {{date:YYYY-MM-DD}}
 provider: 
 progress: 0
 finished: false
 tags: [course]
 ---
 
-# 🎓 <% tp.file.title.replace(/^\d{4}-\d{2}-\d{2}-course-/, "") %>
+# 🎓 {{title}}
 
 ## 基本信息
 - **平台 / Provider**: 
 - **讲师 / Instructor**: 
-- **开始 / Started**: <% tp.date.now("YYYY-MM-DD") %>
+- **开始 / Started**: {{date:YYYY-MM-DD}}
 - **预计完成 / Target Finish**: 
 - **总进度 / Progress**: 0%
 

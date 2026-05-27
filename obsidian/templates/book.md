@@ -1,7 +1,7 @@
 ---
 type: book
 status: active
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: {{date:YYYY-MM-DD}}
 author: 
 finished: 
 rating: 
@@ -9,12 +9,12 @@ key_insight:
 tags: [book]
 ---
 
-# 📚 <% tp.file.title.replace(/^\d{4}-\d{2}-\d{2}-book-/, "") %>
+# 📚 {{title}}
 
 ## 基本信息
 - **作者 / Author**: 
 - **出版年 / Year**: 
-- **开始读 / Started**: <% tp.date.now("YYYY-MM-DD") %>
+- **开始读 / Started**: {{date:YYYY-MM-DD}}
 - **读完 / Finished**: 
 - **评分 / Rating**: ⭐⭐⭐⭐⭐ (1–5)
 - **主题 / Topics**: 

@@ -1,11 +1,11 @@
 ---
 type: idea
 status: active
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: {{date:YYYY-MM-DD}}
 tags: [idea]
 ---
 
-# 💡 <% tp.file.title.replace(/^\d{4}-\d{2}-\d{2}-idea-/, "") %>
+# 💡 {{title}}
 
 ## 🎯 一句话 / One-Liner
 <!-- 这个想法的核心，30 字以内。 -->

@@ -1,7 +1,7 @@
 ---
 type: project
 status: active
-date: <% tp.date.now("YYYY-MM-DD") %>
+date: {{date:YYYY-MM-DD}}
 deadline: 
 priority: medium
 completion: 0
@@ -10,7 +10,7 @@ tags: [project]
 project_tag: 
 ---
 
-# 📁 <% tp.file.title.replace(/^\d{4}-\d{2}-\d{2}-project-/, "") %>
+# 📁 {{title}}
 
 ## 🎯 目标 / Outcome
 <!-- 一句话：项目完成时，世界上会多出什么、变了什么？ -->
@@ -58,7 +58,7 @@ project_tag:
 
 ## 📊 进度日志 / Progress Log
 
-### <% tp.date.now("YYYY-MM-DD") %>
+### {{date:YYYY-MM-DD}}
 - 项目启动
 
 ---

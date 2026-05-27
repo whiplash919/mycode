@@ -11,10 +11,10 @@
 - [ ] 创建 7 个顶层文件夹（见 `vault-structure.md`）
 - [ ] 在 `06 - SYSTEM/templates/` 放入本仓库 `templates/` 下的全部 8 个模板
 - [ ] 在 `06 - SYSTEM/dashboards/` 放入 `dashboards/` 下全部仪表盘文件
-- [ ] 安装并配置插件：Templater、Dataview、Daily Notes
-  - Templater 模板目录指向 `06 - SYSTEM/templates/`
-  - Daily Notes 模板指向 `06 - SYSTEM/templates/daily.md`
-  - Daily Notes 输出目录指向 `01 - NOTES/daily/`
+- [ ] 启用插件：核心 **Templates** 插件、社区 **Dataview** 插件、核心 **Daily Notes** 插件
+  - Settings → Templates → Template folder location 指向 `06 - SYSTEM/templates/`
+  - Settings → Daily notes → Template file location 指向 `06 - SYSTEM/templates/daily.md`
+  - Settings → Daily notes → New file location 指向 `01 - NOTES/daily/`
 - [ ] 打开 `dashboards/inbox.md` 和 `dashboards/active-projects.md`，确认 Dataview 能渲染（即便目前是空的）
 
 **这周不要碰旧笔记**。让新结构和旧内容并存。
