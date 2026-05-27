@@ -3,12 +3,12 @@ type: dashboard
 tags: [dashboard, inbox]
 ---
 
-# 📥 INBOX 处理面板
+# INBOX 处理面板
 
 > 每日花 15 分钟把这里清空。
 > 对每条笔记问：**类型？归属？独立成文还是并入已有？**
 
-## 📋 INBOX 中所有笔记
+## INBOX 中所有笔记
 
 ```dataview
 TABLE WITHOUT ID
@@ -29,7 +29,7 @@ WHERE file.cday <= date(today) - dur(3 days)
 SORT file.cday ASC
 ```
 
-## ❌ 没有 type 字段的（基础信息缺失）
+## 没有 type 字段的（基础信息缺失）
 
 ```dataview
 LIST
@@ -41,7 +41,7 @@ SORT file.mtime DESC
 LIMIT 30
 ```
 
-## ❌ 没有 status 字段的
+## 没有 status 字段的
 
 ```dataview
 LIST
@@ -53,7 +53,7 @@ SORT file.mtime DESC
 LIMIT 30
 ```
 
-## 🏷️ 没有 tags 的（命中检索的关键）
+## 没有 tags 的（命中检索的关键）
 
 ```dataview
 LIST

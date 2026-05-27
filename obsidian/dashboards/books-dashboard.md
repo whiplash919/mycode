@@ -3,9 +3,9 @@ type: dashboard
 tags: [dashboard, books]
 ---
 
-# 📚 读书面板
+# 读书面板
 
-## 📖 正在读
+## 正在读
 
 ```dataview
 TABLE
@@ -16,7 +16,7 @@ WHERE type = "book" AND status = "active"
 SORT date DESC
 ```
 
-## ✅ 已读完（最近一年）
+## 已读完（最近一年）
 
 ```dataview
 TABLE
@@ -31,7 +31,7 @@ WHERE type = "book"
 SORT finished DESC
 ```
 
-## 🏆 高分书（≥4 星）
+## 高分书（≥4 星）
 
 ```dataview
 TABLE
@@ -45,7 +45,7 @@ WHERE type = "book"
 SORT rating DESC, finished DESC
 ```
 
-## 📊 按主题分组
+## 按主题分组
 
 ```dataview
 TABLE
@@ -57,7 +57,7 @@ GROUP BY tags AS "主题"
 SORT length(rows) DESC
 ```
 
-## 📅 阅读节奏（按月）
+## 阅读节奏（按月）
 
 ```dataview
 TABLE
@@ -70,7 +70,7 @@ SORT 月份 DESC
 LIMIT 12
 ```
 
-## 🎯 待读 / Reading List
+## 待读 / Reading List
 
 ```dataview
 LIST

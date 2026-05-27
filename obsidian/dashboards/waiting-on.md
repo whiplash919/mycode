@@ -3,12 +3,12 @@ type: dashboard
 tags: [dashboard, waiting]
 ---
 
-# ⏳ Waiting On — 等待中的事项
+# Waiting On — 等待中的事项
 
 > 这里聚合所有 `status: waiting` 的笔记 + 含 `#status/waiting` 标签的笔记。
 > 这是"球不在我这一侧"的所有事情。定期扫一遍，看哪些该催了。
 
-## 📋 所有等待中的笔记
+## 所有等待中的笔记
 
 ```dataview
 TABLE
@@ -21,7 +21,7 @@ WHERE status = "waiting"
 SORT date ASC
 ```
 
-## 🚨 等待超过 7 天的（该催了）
+## 等待超过 7 天的（该催了）
 
 ```dataview
 LIST "**" + file.link + "** — 已等 " + (date(today) - date).days + " 天"
@@ -32,7 +32,7 @@ WHERE status = "waiting"
 SORT date ASC
 ```
 
-## 🏷️ 带 #status/waiting 标签的笔记
+## 带 #status/waiting 标签的笔记
 
 ```dataview
 LIST
@@ -41,7 +41,7 @@ WHERE !contains(file.folder, "ARCHIVE")
 SORT file.mtime DESC
 ```
 
-## 📦 按项目分组
+## 按项目分组
 
 ```dataview
 TABLE

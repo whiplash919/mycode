@@ -3,9 +3,9 @@ type: dashboard
 tags: [dashboard, weekly]
 ---
 
-# 📅 本周 / This Week
+# 本周 / This Week
 
-## 📝 本周创建的笔记
+## 本周创建的笔记
 
 ```dataview
 TABLE
@@ -19,7 +19,7 @@ WHERE file.cday >= date(today) - dur(7 days)
 SORT file.cday DESC
 ```
 
-## 🗒️ 本周日记
+## 本周日记
 
 ```dataview
 LIST
@@ -28,7 +28,7 @@ WHERE date >= date(today) - dur(7 days)
 SORT date DESC
 ```
 
-## 🤝 本周会议
+## 本周会议
 
 ```dataview
 TABLE
@@ -39,7 +39,7 @@ WHERE date >= date(today) - dur(7 days)
 SORT date DESC
 ```
 
-## 💡 本周捕获的想法
+## 本周捕获的想法
 
 ```dataview
 LIST
@@ -49,7 +49,7 @@ WHERE type = "idea"
 SORT date DESC
 ```
 
-## 📚 本周阅读进展
+## 本周阅读进展
 
 ```dataview
 TABLE
@@ -62,7 +62,7 @@ WHERE type = "book"
 SORT file.mtime DESC
 ```
 
-## ⏭️ 本周更新的项目
+## 本周更新的项目
 
 ```dataview
 TABLE

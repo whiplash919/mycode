@@ -27,20 +27,20 @@ project:
 
 ### 
 
-## ⚡ 决定 / Decisions
+## 决定 / Decisions
 <!-- 会上达成共识的结论。这是会议的真正产出。 -->
 
 - [ ] 
 
-## 📌 行动项 / Action Items
+## 行动项 / Action Items
 <!-- 每条必须有：做什么、谁做、何时完成。 -->
 
 - [ ] @负责人 - 任务描述 — 截止 YYYY-MM-DD
 - [ ] @ -  — 截止 
 
-## ❓ 待解决 / Open Questions
+## 待解决 / Open Questions
 - 
 
-## 🔗 相关
+## 相关
 - 上次会议：[[]]
 - 项目主页：[[]]

@@ -3,12 +3,12 @@ type: dashboard
 tags: [dashboard, projects]
 ---
 
-# 🚀 进行中的项目 / Active Projects
+# 进行中的项目 / Active Projects
 
 > 此仪表盘只显示 `type=project` 且 `status=active` 的笔记。
 > 按截止日期升序排列，最紧迫的在最上面。
 
-## 📋 项目总表
+## 项目总表
 
 ```dataview
 TABLE
@@ -21,7 +21,7 @@ WHERE type = "project" AND status = "active"
 SORT deadline ASC
 ```
 
-## ⚠️ 本月到期
+## 本月到期
 
 ```dataview
 LIST "**" + file.link + "** — 截止 " + deadline + " — 下一步：" + next_action
@@ -33,7 +33,7 @@ WHERE type = "project"
 SORT deadline ASC
 ```
 
-## 🔥 高优先级
+## 高优先级
 
 ```dataview
 TABLE
@@ -46,7 +46,7 @@ WHERE type = "project"
 SORT deadline ASC
 ```
 
-## 🚫 无下一步的项目（需立即处理）
+## 无下一步的项目（需立即处理）
 <!-- next_action 为空 = 这个项目实际上没在推进 -->
 
 ```dataview
@@ -57,7 +57,7 @@ WHERE type = "project"
   AND (next_action = null OR next_action = "")
 ```
 
-## ✅ 最近完成的项目（最近 30 天）
+## 最近完成的项目（最近 30 天）
 
 ```dataview
 TABLE
